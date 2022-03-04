@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+body {
+  background-color: #878a8c;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -34,5 +36,130 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.ant-list-vertical .ant-list-item-extra {
+  margin-left: 0 !important;
+  width: 8%;
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+}
+
+/* .ant-list-vertical .ant-list-item-meta-title {
+  color: rgba(0, 0, 0, 0.45) !important;
+  font-style: 14px !important;
+  line-height: 1.5715 !important;
+}
+
+.ant-list-item-meta-description {
+  margin-bottom: 16px !important;
+  font-style: 16px !important;
+  line-height: 24 !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+} */
+.site-layout-background {
+  background: #fff;
+}
+
+.ant-list-item-meta-content {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.ant-list-item-meta-title {
+  margin-bottom: 0 !important;
+}
+
+.contentArea {
+  padding: 0 50px;
+}
+.responsiveBreak {
+  display: inherit;
+}
+
+.postList {
+  flex-direction: row-reverse;
+  border: 1px solid rgba(0, 0, 0, 0.45) !important;
+  background: #ffffff;
+  margin-bottom: 1em;
+  padding: 16px 24px 16px 0px !important;
+}
+.voteSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ant-list-vertical .ant-list-item-extra {
+  margin: unset !important;
+}
+
+.ant-pagination {
+  text-align: center;
+}
+
+.headerTitle {
+  margin: 16px 0;
+}
+.postHeader,
+.voteHeader {
+  font-weight: bold;
+}
+.voteNum {
+  margin: 0.3em 0;
+}
+.postContent {
+  padding: 0px;
+  margin: 16px 0;
+}
+.sideCard {
+  width: 100% !important;
+  border: 1px solid rgba(0, 0, 0, 0.45) !important;
+  margin-bottom: 1em !important;
+}
+.formContent {
+  padding: 16px;
+  background: #ffffff;
+}
+.topicCard {
+  width: 100% !important;
+  border: 1px solid rgba(0, 0, 0, 0.45) !important;
+  margin-bottom: 20px !important;
+}
+
+footer {
+  text-align: center;
+}
+
+.breadCrumb {
+  margin: 16px 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .ant-layout-header {
+    padding: 0 !important;
+  }
+  .contentArea {
+    padding: 0 20px;
+  }
+  .responsiveBreak {
+    display: block;
+  }
+  .postList {
+    padding: 16px 24px 16px 20px !important;
+  }
+  .postList .ant-list-item-main {
+    padding-left: 20px;
+  }
+  .postList .ant-list-vertical .ant-list-item-extra {
+    border: 1px solid red !important;
+  }
+  /* .voteSection {
+    justify-content: baseline;
+  } */
+  .topicsLIst {
+    flex-direction: column-reverse !important;
   }
 }

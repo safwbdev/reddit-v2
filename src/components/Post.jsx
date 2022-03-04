@@ -1,21 +1,19 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { List, Button, Typography, message } from "antd";
-import { deletePost, savePost } from "../redux/actions/postActions";
+import { List, Button, Typography,  } from "antd";
+import { deletePost,  } from "../redux/actions/postActions";
 import { HeartOutlined, EditOutlined, HeartFilled } from "@ant-design/icons";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import { VoteSection, IconText, DeletePrompt } from ".";
 import {
-  FAVORITE_ADDED,
-  FAVORITE_REMOVED,
   POST_BY_USER,
 } from "../constants/lang";
 import { addFavorite, removeFavorite } from "../redux/actions/favoriteActions";
 import { EDIT, POST, TOPIC } from "../constants/routes";
 
 const Post = ({ data }) => {
-  const { id, title, body, votes, saved, date, user, topic } = data;
+  const { id, title, body, votes,  date, user, topic } = data;
 
   const dispatch = useDispatch();
 
@@ -27,6 +25,7 @@ const Post = ({ data }) => {
     if (post === id) {
       check = true;
     }
+    return null
   });
 
   const handleSave = () => {

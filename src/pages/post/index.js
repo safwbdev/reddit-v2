@@ -58,6 +58,7 @@ const PostPage = () => {
     if (post === id) {
       check = true;
     }
+    return null;
   });
 
   const topHeader = (

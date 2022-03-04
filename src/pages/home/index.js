@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { Breadcrumb, Col, List, Row } from "antd";
 import { Post } from "../../components";
